@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Potta One', cursive;
+}
+header{
+    /* background-color: aquamarine; */
+    display: flex;
+    width: 95%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+    color: gray;
+}
+.nav-links,.cart{
+    display: flex;
+}
+.logo-container{ 
+    flex: 1;
+    /* display: flex; */
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 1.5rem;
+    color: black;
+    height: 10vh;
+
+}
+.logo-container img{
+    padding: 124px 11px 0px 0px;
+    margin: -135px 0px -41px 0px;
+    cursor: pointer;
+    animation: drop1 2.5s ease-in-out;
+    
+}
+/* .img-container img:hover{
+    animation: drop1 1.5s ease;
+    cursor: pointer;
+} */
+@keyframes drop1{
+    0%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(65px);
+    }
+}
+
+.logo{
+    font-weight: 300;
+    margin: 35px 19px;
+    cursor: pointer;
+    text-decoration: double;
+}
+nav{
+    flex:20;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+    /* font-size: 1.7rem; */
+}
+.nav-link:hover{
+    color: black;
+}
+.nav-link {
+    font-size: 2.0rem;
+    color: gray;
+    
+}
+
+.cart{
+
+flex: 0;
+cursor: pointer;
+height: 10vh;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{
+    
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 2.5rem;
+    font-weight: 400px;
+    background: linear-gradient(to right, red blue);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color:rgb(150, 35, 35);
+
+}
+.intro-text p{
+    font-size: 1.9rem;
+    margin: 25px 0px;
+}
+.cta{
+    height: -10vh;
+    /* width: -30px; */
+    font-size: 1.3rem;
+    
+}
+.cta-500cc{
+    padding: 7px 20px;
+    margin: 5px 5px;
+    border: 3px green solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 1.2rem;
+    color: green;
+
+}
+.cta-add{
+    border: 3px green solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background: green;
+    color: wheat;
+    font-size: 1.2rem;
+    padding: 7px 20px;
+}
+.cover{
+    flex: 1;
+    height: 35vh;
+}
+.cover img{
+    filter: drop-shadow(3px 3px 3px black);
+    animation: drop 1.5s ease;
+    animation-delay: 3s;
+    
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(80px);
+    }
+}
+@media screen and (max-width:1024px){
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        /* font-size: 1rem; */
+        /* align-items: center; */
+        margin-top: 10vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 2rem;
+        padding: 0px 0px;
+        margin: 25px 5px;
+
+    }
+    .intro-text p{
+        font-size: 1rem;
+
+    }
+    /* .cta{
+        padding: 0px 0px 0px 0px;
+        margin: 0px 10px 0px 0px;
+    } */
+    .cover img{
+        height: 80%;
+    }
+    header{
+        /* width: 50%; */
+        font-size: 50px;
+    }
+    .nav-link{
+        font-size: 1.3rem;
+        /* font-weight: 50px; */
+    }
+    .logo-container img{
+        height: 60%;
+        padding: 5px 5px 5px 0px;
+        margin: -10px 0px 0px 0px;
+    }
+    .logo{
+        font-size: 0.9rem;
+        margin: 0px 0px ;
+    }
+    .cart img{
+        height:70%;
+    }
+    @keyframes drop1 {
+        0%{
+            opacity: 0;
+            transform: translateX(-5px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(30px);
+        }
+        
+    }
+}
+@media screen and (max-width:667px){
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        /* font-size: 1rem; */
+        /* align-items: center; */
+        margin-top: 2.5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 1rem;
+
+    }
+    .intro-text p{
+        font-size: 0.8rem;
+
+    }
+    .cta{
+        
+        height: 10%;
+    }
+.cta-500cc{
+    font-size: 0.6rem;
+    padding:  8px 5px;
+}
+.cta-add{
+    font-size: 0.6rem;
+    padding: 8px 5px;
+}
+
+    .cover img{
+        height: 50%;
+    }
+    header{
+        /* width: 50%; */
+        font-size: 5px;
+    }
+    .nav-link{
+        font-size: 0.7rem;
+        /* font-weight: 50px; */
+    }
+    .logo-container img{
+        height: 30%;
+        padding: 2.5px 2.5px 2.5px 0px;
+        margin: -5px 0px 0px 0px;
+    }
+    .logo{
+        font-size: 0.4rem;
+        margin: 0px 0px ;
+    }
+    .cart img{
+        height:35%;
+        padding: 18px 0px;
+    }
+    @keyframes drop1 {
+        0%{
+            opacity: 0;
+            transform: translateX(-2.5px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(15px);
+        }
+        
+    }
+}
